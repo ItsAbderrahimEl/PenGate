@@ -1,0 +1,29 @@
+<h1>Cracking the Domain: Active Directory Attacks in Penetration Testing</h1>
+
+<p>Active Directory (AD) is the backbone of many corporate networks, managing user accounts, permissions, and policies. Compromising AD can grant attackers extensive control, making it a prime target during penetration tests and real-world attacks.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>Kerberos Attacks:</strong> Techniques like <em>Kerberoasting</em> and <em>Pass-the-Ticket</em> exploit weaknesses in ticket-granting services to escalate privileges or move laterally.</li>
+
+    <li><strong>LDAP and ACL Abuse:</strong> Manipulating LDAP queries or abusing Access Control Lists can expose sensitive information or allow unauthorized privilege changes.</li>
+
+    <li><strong>Golden and Silver Tickets:</strong> Forging Kerberos tickets enables attackers to impersonate users, including domain admins, gaining persistent and stealthy access.</li>
+
+    <li><strong>BloodHound and Enumeration:</strong> Tools like BloodHound visualize relationships and attack paths within AD, helping pentesters identify the easiest ways to escalate and move through the network.</li>
+</ul>
+
+<blockquote>
+    <p><em>"Dominate the domain, dominate the network."</em> — <strong>Enterprise Red Team Wisdom</strong></p>
+</blockquote>
+
+<p>Due to AD’s complexity and critical role, attacks here can have catastrophic consequences. Pentesters simulate these attacks to identify weaknesses and help organizations secure their environments.</p>
+
+<p>Defenders should implement strict privilege separation, monitor Kerberos activity, enforce strong authentication, and regularly audit AD permissions to mitigate risks.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://attack.mitre.org/groups/G0003/">MITRE ATT&CK - Active Directory Attacks</a></li>
+    <li><a href="https://www.bloodhoundathome.com/">BloodHound - Active Directory Attack Tool</a></li>
+</ul>

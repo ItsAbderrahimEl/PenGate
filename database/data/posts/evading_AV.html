@@ -1,0 +1,29 @@
+<h1>Evading the Watchdogs: Antivirus and EDR Evasion in Pentesting</h1>
+
+<p>Modern security environments deploy Antivirus (AV) and Endpoint Detection and Response (EDR) systems designed to detect and block malicious activity. For penetration testers, mastering <em>evasion techniques</em> is essential to bypass these defenses and demonstrate realistic attack scenarios.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>Obfuscation and Encryption:</strong> Encoding payloads, using packers, or encrypting communications can help evade signature-based detection.</li>
+
+    <li><strong>Living off the Land:</strong> Leveraging legitimate system tools (e.g., <code>PowerShell</code>, <code>WMI</code>, <code>CertUtil</code>) reduces suspicious artifacts and detection risk.</li>
+
+    <li><strong>Process Injection:</strong> Injecting malicious code into trusted processes can hide malicious activity from monitoring tools.</li>
+
+    <li><strong>Disabling or Bypassing EDR:</strong> Techniques like tampering with EDR services, abusing signed binaries, or exploiting vulnerabilities to disable protections are sometimes used.</li>
+</ul>
+
+<blockquote>
+    <p><em>"If the defender can see you, you’re already too late."</em> — <strong>Red Team Mindset</strong></p>
+</blockquote>
+
+<p>Effective evasion requires deep understanding of both offensive tools and defensive technologies. Continuous testing and updating tactics are necessary as AV and EDR products evolve rapidly.</p>
+
+<p>Defenders should employ layered security, behavior analytics, and threat hunting to detect subtle signs of evasion and respond swiftly.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://attack.mitre.org/techniques/T1089/">MITRE ATT&CK - Disabling Security Tools</a></li>
+    <li><a href="https://www.offensive-security.com/metasploit-unleashed/avoiding-detection/">Offensive Security - Avoiding Detection</a></li>
+</ul>

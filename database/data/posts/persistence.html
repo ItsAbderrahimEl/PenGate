@@ -1,0 +1,29 @@
+<h1>Staying Hidden: Persistence Techniques in Penetration Testing</h1>
+
+<p>In penetration testing and red teaming, <em>persistence</em> refers to the ability to maintain access to a compromised system even after reboots or detection attempts. Once access is gained, a smart attacker ensures they won’t need to break in again — this is where persistence techniques come into play.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>Startup & Scheduled Tasks:</strong> Creating scheduled tasks or modifying startup folders/registry keys ensures payloads or shells are re-executed upon system boot or user login.</li>
+
+    <li><strong>Abusing Legitimate Tools:</strong> Using trusted tools like <code>certutil</code>, <code>PowerShell</code>, or WMI to maintain stealthy backdoors minimizes the risk of detection from AV or EDR.</li>
+
+    <li><strong>DLL Hijacking & Services:</strong> By planting malicious DLLs or modifying Windows services, attackers can keep access even after a system reboot, especially on high-value servers or domain controllers.</li>
+
+    <li><strong>Backdooring Accounts:</strong> Creating hidden users or adding SSH keys to authorized files allows persistent access without needing to exploit vulnerabilities again.</li>
+</ul>
+
+<blockquote>
+    <p><em>"Initial access gets you in. Persistence ensures you stay in."</em> – <strong>Red Team Doctrine</strong></p>
+</blockquote>
+
+<p>Persistence is often subtle and difficult to detect. It's designed not to trigger alarms — which is why it’s so dangerous. Ethical hackers test these techniques to reveal how long an attacker could remain in a system undetected.</p>
+
+<p>For defenders, identifying and neutralizing persistence mechanisms is a key component of incident response and digital forensics. Tools like Sysinternals, Autoruns, and EDR platforms can help uncover stealthy implants.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://attack.mitre.org/tactics/TA0003/">MITRE ATT&CK - Persistence</a></li>
+    <li><a href="https://redteamnotes.com/windows-persistence-techniques/">Red Team Notes - Windows Persistence Techniques</a></li>
+</ul>

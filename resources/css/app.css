@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+    @apply w-full text-white font-bold bg-gray-700 p-3 rounded  transition-colors
+    duration-300 hover:bg-gray-800 disabled:cursor-wait
+}
+
+.secondary-button {
+    @apply transition-all duration-300 px-5 py-3 rounded-2xl self-end
+}
+
+.scroll-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+@layer components {
+    .markdown-post {
+        @apply prose text-gray-200 text-xl prose-cyan prose-headings:text-gray-300 prose-blockquote:text-white
+        prose-strong:text-gray-400 prose-em:italic prose-em:font-semibold max-w-none;
+    }
+}
+
+@layer components {
+    .markdown-comment {
+        @apply prose text-gray-800 text-sm prose-cyan prose-headings:text-gray-300 prose-blockquote:text-white
+        prose-strong:text-gray-900 prose-em:italic prose-em:font-semibold max-w-none;
+    }
+}
+
+.tip-tap-highlight {
+    @apply bg-gray-500
+}

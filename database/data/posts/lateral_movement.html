@@ -1,0 +1,29 @@
+<h1>Spreading Through the Network: Lateral Movement in Pentesting</h1>
+
+<p>Once inside a compromised system, skilled attackers rarely stop there. <em>Lateral movement</em> is the process of navigating through a network to access other systems, gather intelligence, and reach high-value targets. For penetration testers, mastering this phase is essential to simulate real-world threats and uncover hidden weaknesses in network architecture.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>Credential Reuse:</strong> Harvested credentials are often valid across multiple machines. Pentesters use tools like <code>CrackMapExec</code> or <code>PsExec</code> to authenticate across systems and move laterally.</li>
+
+    <li><strong>Pass-the-Hash / Pass-the-Ticket:</strong> Instead of cracking passwords, attackers can use NTLM hashes or Kerberos tickets to authenticate without ever knowing the clear-text password.</li>
+
+    <li><strong>Remote Services:</strong> Services like RDP, WinRM, SMB, and SSH are common pathways for lateral movement. Weak configurations or poor segmentation make these routes dangerously easy to exploit.</li>
+
+    <li><strong>Active Directory Abuse:</strong> Enumerating domain trusts, user privileges, and Group Policy Objects (GPOs) allows attackers to leverage domain functionality to escalate and pivot further.</li>
+</ul>
+
+<blockquote>
+    <p><em>"Compromise one host, map the entire network."</em> - <strong>Red Team Tactic</strong></p>
+</blockquote>
+
+<p>Lateral movement is about more than just hopping between machines — it’s about understanding trust relationships, privilege boundaries, and where valuable data resides. This phase is where attackers truly infiltrate and control an organization.</p>
+
+<p>Defenders must deploy internal segmentation, strong logging, and behavioral monitoring to detect this type of movement. Preventing lateral movement means stopping attackers from turning a single foothold into total compromise.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://attack.mitre.org/tactics/TA0008/">MITRE ATT&CK - Lateral Movement</a></li>
+    <li><a href="https://adsecurity.org/">ADSecurity.org - Active Directory Security</a></li>
+</ul>

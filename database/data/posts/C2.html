@@ -1,0 +1,29 @@
+<h1>Controlling the Compromise: Command & Control in Pentesting</h1>
+
+<p>Once initial access is gained, maintaining reliable communication with the compromised system is essential. <em>Command and Control (C2)</em> infrastructure enables attackers or red teamers to remotely interact with victims, issue commands, and exfiltrate data — all while staying under the radar.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>Types of C2 Channels:</strong> C2 channels can be <em>HTTP(S)</em>, <em>DNS</em>, <em>ICMP</em>, or even <em>social media-based</em>. Each offers a balance between stealth, reliability, and complexity.</li>
+
+    <li><strong>Popular Frameworks:</strong> Tools like <code>Covenant</code>, <code>Cobalt Strike</code>, <code>Mythic</code>, <code>Sliver</code>, and <code>Metasploit</code> provide robust C2 capabilities for both offensive security teams and threat actors.</li>
+
+    <li><strong>Evasion Techniques:</strong> To avoid detection, C2 traffic is often encrypted, disguised as legitimate web traffic, or spread across multiple domains using Domain Fronting or Fast Flux.</li>
+
+    <li><strong>Beaconing:</strong> Rather than maintaining a constant connection, many implants "phone home" at intervals to reduce the risk of being flagged by network monitoring tools.</li>
+</ul>
+
+<blockquote>
+    <p><em>"A C2 channel is the heartbeat of a compromise — cut it off, and the attack dies."</em> – <strong>Red Team Lead</strong></p>
+</blockquote>
+
+<p>C2 frameworks are vital for simulating advanced persistent threats (APTs). They allow testers to emulate realistic post-exploitation activities, such as data theft, internal reconnaissance, and privilege escalation — while remaining stealthy and resilient.</p>
+
+<p>Defenders should implement DNS logging, TLS inspection (where feasible), anomaly detection, and behavior-based analytics to detect and disrupt C2 communications before damage is done.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://attack.mitre.org/tactics/TA0011/">MITRE ATT&CK - Command and Control</a></li>
+    <li><a href="https://www.specterops.io/">SpecterOps - C2 and Red Team Tools</a></li>
+</ul>

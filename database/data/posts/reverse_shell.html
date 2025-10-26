@@ -1,0 +1,29 @@
+<h1>Behind the Firewall: Understanding Reverse Shells in Pentesting</h1>
+
+<p>Reverse shells are one of the most powerful tools in a pentester’s arsenal. They allow attackers to remotely control a compromised system by having it initiate a connection back to the attacker's machine — a key technique for bypassing firewalls and NAT configurations that block inbound traffic.</p>
+
+<h2>Key Takeaways:</h2>
+
+<ul>
+    <li><strong>What is a Reverse Shell?</strong> A reverse shell is a type of shell where the target machine connects back to the attacker’s system. This outbound connection allows the attacker to execute commands on the target as if they had physical access.</li>
+
+    <li><strong>Common Payloads:</strong> Tools like <code>msfvenom</code>, <code>nc</code> (Netcat), and <code>bash</code> one-liners are used to craft reverse shell payloads. These can be delivered through RCE vulnerabilities, file uploads, or malicious links.</li>
+
+    <li><strong>Bypassing Security:</strong> Reverse shells help evade firewall restrictions, as outbound traffic is usually allowed. Encryption (e.g., over HTTPS or TLS) can further hide the shell from detection systems.</li>
+
+    <li><strong>Listener Setup:</strong> The attacker must set up a listener on their machine (e.g., using <code>nc -lvnp 4444</code>) to accept incoming connections from the target once the payload is executed.</li>
+</ul>
+
+<blockquote>
+    <p><em>"If your payload gets executed, your shell is your key."</em> - <strong>Offensive Security</strong></p>
+</blockquote>
+
+<p>Reverse shells are not just for basic access — they’re a gateway to deeper exploitation, allowing privilege escalation, persistence, lateral movement, and more. They are a vital part of red teaming, CTFs, and real-world attacks alike.</p>
+
+<p>Defenders can mitigate reverse shell threats by enforcing egress filtering, monitoring unusual outbound connections, and using behavior-based detection systems to flag suspicious process activity.</p>
+
+<h3>Sources:</h3>
+<ul>
+    <li><a href="https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet">Pentest Monkey - Reverse Shell Cheat Sheet</a></li>
+    <li><a href="https://book.hacktricks.xyz/pentesting-web/reverse-shell">HackTricks - Reverse Shells</a></li>
+</ul>
